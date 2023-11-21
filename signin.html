@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="" class="logo" alt="">LOGO</a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li i><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="lg-bag"><a href="account.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="signin.html" class="a-button" class=""><span>Sign In</span></a></li>
+                            <li><a>Click Here for </a><a href="#">Register</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Orders</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="lg-bag"><a href="liked.html"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a>Your Cart</a></li>
+                            <li><a href="#" class="a-button">View Cart</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="login-form">
+        <form>
+            <h3>Sign In</h3>
+            <div class="container inputbox">
+                <span>E-mail</span>
+                <input type="text" required placeholder="Enter E-mail">
+
+                <span>Password</span>
+                <input type="password" required placeholder="Enter Password">
+
+                <button type="submit">Login</button>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember Me
+                </label>
+                <a href="index.html">Forgot Password</a>
+            </div>
+            
+        </form>
+        
+        <div class="container registerbox">
+            <h4>Im new</h4>
+            <button type="button"><a href="#">Register</a></button>
+        </div>
+    </section>
+</body>
+</html>
