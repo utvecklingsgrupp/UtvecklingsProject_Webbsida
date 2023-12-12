@@ -12,8 +12,8 @@
         <a href="index.html"><img src="/img/banner/logo.png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li i><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -46,30 +46,48 @@
         </div>
     </section>
 
-
-    <section id="login-form">
-        <form>
-            <h3>Sign In</h3>
-            <div class="container inputbox">
-                <span>E-mail</span>
-                <input type="text" required placeholder="Enter E-mail">
-
-                <span>Password</span>
-                <input type="password" required placeholder="Enter Password">
-
-                <button type="submit">Login</button>
-
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember Me
-                </label>
-                <a href="index.html">Forgot Password</a>
+    <section id="product-page" class="section-p1">
+        <h1>Products</h1>
+        <div id="product-prop">
+            <div id="categories-container">
+                <div class="search">
+                    <input type="text" placeholder="Product Search">
+                    <button class="normal"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="categories">
+                    <h5>Categories</h5>
+                    <button onclick="filterProducts('all','category')" class="categories-button normal">All</button>
+                    <button onclick="filterProducts('Hoodie','category')" class="categories-button normal">Hoodie</button>
+                    <button onclick="filterProducts('T-shirt','category')"class="categories-button normal">T-Shirt</button>
+                    <button onclick="filterProducts('Pants','category')" class="categories-button normal">Pants</button>
+                    <button onclick="filterProducts('Dress','category')" class="categories-button normal">Dresses</button>
+                    <button onclick="filterProducts('Jackets','category')" class="categories-button normal">Jackets</button>
+                    <button onclick="filterProducts('Shoes','category')"class="categories-button normal">Shoes</button>
+                   
+                </div>
             </div>
-            
-        </form>
-        
-        <div class="container registerbox">
-            <h4>Im new</h4>
-            <button type="button"><a href="#">Register</a></button>
+            <div id="product">
+                <div class="product-filter">
+                    <div class="filter-buttons">
+                        <button onclick="filterProducts('Red', 'color')" class="categories-button-color normal">Red</button>
+                        <button onclick="filterProducts('Blue', 'color')" class="categories-button-color normal">Blue</button>
+                        <button onclick="filterProducts('Green', 'color')"class="categories-button-color normal">Green</button>
+                        <button onclick="filterProducts('Yellow', 'color')" class="categories-button-color normal">Yellow</button>
+                    </div>
+                    <div class="product-sorting">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort" onchange="sortProducts(this.value)">
+                            <option value="default">Default</option>
+                            <option value="reviewsHighToLow">Reviews High to Low</option>
+                            <option value="priceHighToLow">Price High to Low</option>
+                            <option value="priceLowToHigh">Price Low to High</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="product-container">
+                    
+                </div>
+            </div>
         </div>
     </section>
 
@@ -132,5 +150,6 @@
             <p>©2023, Grupp4 etc - Ecommerce</p>
         </div>
     </footer>
+    <script src="product-filter.js"></script>
 </body>
-</html>
+</html

@@ -46,30 +46,70 @@
         </div>
     </section>
 
+    
 
-    <section id="login-form">
-        <form>
-            <h3>Sign In</h3>
-            <div class="container inputbox">
-                <span>E-mail</span>
-                <input type="text" required placeholder="Enter E-mail">
+    <section id="cart" class="section-p1">
+        <h2>Your Cart</h2>
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></a></i></td>
+                    <td><img src="img/clothes/hoodie-yellow.png"></td>
+                    <td>hoodie-yellow</td>
+                    <td>499kr</td>
+                    <td><input name="quantity" type="number" value="1"></td>
+                    <td>499kr</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></a></i></td>
+                    <td><img src="img/clothes/hoodie-yellow.png"></td>
+                    <td>hoodie-yellow</td>
+                    <td>499kr</td>
+                    <td><input name="quantity" type="number" value="1"></td>
+                    <td>499kr</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></a></i></td>
+                    <td><img src="img/clothes/hoodie-yellow.png"></td>
+                    <td>hoodie-yellow</td>
+                    <td>499kr</td>
+                    <td><input name="quantity" type="number" value="1"></td>
+                    <td>499kr</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-                <span>Password</span>
-                <input type="password" required placeholder="Enter Password">
-
-                <button type="submit">Login</button>
-
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember Me
-                </label>
-                <a href="index.html">Forgot Password</a>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Discount-Code</h3>
+            <div>
+               <input name="coupon" type="text" placeholder="Enter Your Code">
+                <button class="normal">Apply</button> 
             </div>
-            
-        </form>
-        
-        <div class="container registerbox">
-            <h4>Im new</h4>
-            <button type="button"><a href="#">Register</a></button>
+        </div>
+        <div id="sub-total">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>1497kr</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+            </table>
         </div>
     </section>
 
